@@ -103,32 +103,74 @@ class HomeScreen extends StatelessWidget {
                   height: 50,
                 ),
                 Stack(
+                  clipBehavior: Clip.none,
                   children: [
-                    Positioned(
-                      child: Container(
-                        width: 150,
-                        height: 150,
+                    Container(
+                      width: 150,
+                      height: 150,
+                      decoration: const BoxDecoration(
                         color: Colors.red,
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Text(
+                          'Red',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     Positioned(
+                      right: -50,
+                      bottom: -50,
                       child: Container(
                         width: 150,
                         height: 150,
-                        color: Colors.purple,
+                        decoration: const BoxDecoration(
+                          color: Colors.purple,
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                        ),
+                        child: const Padding(
+                          padding: EdgeInsets.all(10.0),
+                          child: Text(
+                            'Purple',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       ),
                     ),
                     Positioned(
+                      right: -100,
+                      bottom: -100,
                       child: Container(
                         width: 150,
                         height: 150,
-                        color: Colors.yellow,
+                        decoration: const BoxDecoration(
+                          color: Color.fromARGB(255, 214, 195, 24),
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                        ),
+                        child: const Padding(
+                          padding: EdgeInsets.all(10.0),
+                          child: Text(
+                            'Yellow',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 200,
                 ),
               ],
             ),
