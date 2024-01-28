@@ -2,5 +2,5 @@
 
 Class 4 and 5 Assignment. 
 
-![Alt text](screenshot1.jpg)
-![Alt text](screenshot2.jpg)
+![Alt text](screenshot1.png)
+![Alt text](screenshot2.png)
